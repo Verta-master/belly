@@ -29,3 +29,42 @@
     background: linear-gradient(90.09deg, rgba(255, 255, 255, 0) -1.82%, rgba(255, 255, 255, 0.2) 50.83%, rgba(255, 255, 255, 0) 99.92%);
   }
 }
+.btn--pink {
+  color: #E22D58;
+  background: linear-gradient(180deg, rgba(226, 45, 88, 0.1) 0%, rgba(151, 11, 134, 0.1) 100%);
+  
+  &:hover,
+  &:active {
+    color: #FFFFFF;
+    background: linear-gradient(92.52deg, #E22D58 0%, #970B86 100%);
+  }
+}
+.btn--shadow {
+  position: relative;
+  z-index: 5;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -3px;
+    right: -3px;
+    top: -4px;
+    bottom: -4px;
+    background: linear-gradient(92.52deg, #E22D58 0%, #970B86 100%);
+    filter: blur(50px);
+    border-radius: 30px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    top: 4px;
+    bottom: -4px;
+    background: #000000;
+    opacity: 0.1;
+    border-radius: 30px;
+  }
+}

@@ -62,6 +62,7 @@
       <div class="wrapper">
         <p class="subtitle">После прохождения курса</p>
         <p class="title">Вы научитесь выполнять</p>
+        <p class="undertitle">Навыки</p>
         <ul class="result__list">
           <li class="result__item">
             <figure class="result__img">
@@ -92,7 +93,7 @@
               <img src="img/images/img-4.jpg" alt="Навыки">
             </figure>
             <div class="result__info">
-              <p>ЛАМИНИРОВАНИЕ/ДОЛГОВРЕ-МЕННУЮ УКЛАДКУ БРОВЕЙ</p>
+              <p>ЛАМИНИРОВАНИЕ/ДОЛГОВРЕМЕННУЮ УКЛАДКУ БРОВЕЙ</p>
             </div>
           </li>
           <li class="result__item">
@@ -144,6 +145,7 @@
       <div class="wrapper">
         <p class="subtitle">вопросы и ответы</p>
         <p class="title">Частые вопросы учеников</p>
+        <p class="undertitle">вопросы</p>
         <ul class="faq__list">
           <li class="faq__item">
             <p class="faq__title">Как попасть к вам на курс?</p>
@@ -179,6 +181,7 @@
         <p class="subtitle">курсы академии красоты</p>
         <p class="title">Курсы наращивания ресниц</p>
         <p class="subtitle-2">Современные курсы по работе с ресницами и бровями. Выбери профессию и получи международный сертификат специалиста</p>
+        <p class="undertitle">ресницы</p>
         <div class="course__wrap">
           <div class="swiper-container course__slider course__slider--01">
             <div class="swiper-wrapper">
@@ -204,8 +207,8 @@
                     <p class="course__sale">Скидка 39%</p>
                     <p class="course__oldprice">Было <span>13 800 руб.</span></p>
                     <p class="course__price"><span>8 800</span> руб.</p>
-                    <a href="#" class="btn course__more">подробнее</a>
-                    <a href="#" class="course__order">записаться на курс</a>
+                    <a href="#" class="btn btn--white course__more">подробнее</a>
+                    <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
                   </div>
                 </div>
               </div>
@@ -231,8 +234,8 @@
                     <p class="course__sale">Скидка 39%</p>
                     <p class="course__oldprice">Было <span>13 800 руб.</span></p>
                     <p class="course__price"><span>8 800</span> руб.</p>
-                    <a href="#" class="btn course__more">подробнее</a>
-                    <a href="#" class="course__order">записаться на курс</a>
+                    <a href="#" class="btn btn--white course__more">подробнее</a>
+                    <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
                   </div>
                 </div>
               </div>
@@ -258,8 +261,8 @@
                     <p class="course__sale">Скидка 39%</p>
                     <p class="course__oldprice">Было <span>13 800 руб.</span></p>
                     <p class="course__price"><span>8 800</span> руб.</p>
-                    <a href="#" class="btn course__more">подробнее</a>
-                    <a href="#" class="course__order">записаться на курс</a>
+                    <a href="#" class="btn btn--white course__more">подробнее</a>
+                    <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
                   </div>
                 </div>
               </div>
@@ -801,10 +804,10 @@
   
   <!-- Sliders -->
   <script>
-    var mySwiper = new Swiper ('.course__slider', {
+    var mySwiper = new Swiper ('.course__slider--01', {
       navigation: {
-        nextEl: '.course__next',
-        prevEl: '.course__prev',
+        nextEl: '.course__next--01',
+        prevEl: '.course__prev--01',
       },
       simulateTouch: false,
       preventClicks: false,
@@ -843,6 +846,14 @@
     $(function() {
       $("#tabs").tabs();
     });
+  </script>
+  
+<!-- FAQ -->
+  <script>
+    $('.faq__title').click(function() {
+      $(this).toggleClass('faq__title--top');
+      $(this).next().slideToggle();
+    })
   </script>
 </body>
 </html>
