@@ -1,0 +1,20 @@
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.7" x="-0.5" y="0.5" width="109" height="109" rx="54.5" transform="matrix(-1 0 0 1 109 0)" stroke="url(#paint0_linear_625_689)"/>
+<rect width="110" height="110" rx="55" transform="matrix(-1 0 0 1 110 0)" fill="url(#paint1_linear_625_689)"/>
+<rect opacity="0.7" x="-0.5" y="0.5" width="109" height="109" rx="54.5" transform="matrix(-1 0 0 1 109 0)" stroke="url(#paint2_linear_625_689)"/>
+<path d="M68 55.5L46.25 73.2535L46.25 37.7465L68 55.5Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_625_689" x1="55" y1="0" x2="55" y2="110" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_625_689" x1="0" y1="55" x2="110" y2="55" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E22D58" stop-opacity="0.99"/>
+<stop offset="1" stop-color="#970B86" stop-opacity="0.24"/>
+</linearGradient>
+<linearGradient id="paint2_linear_625_689" x1="55" y1="0" x2="55" y2="110" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
