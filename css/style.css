@@ -661,6 +661,21 @@ h1,
   width: 238px;
   height: 46px;
 }
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/cross.svg);
+  background-size: 23px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header__menu--show {
+  display: block;
+}
 .menu {
   position: fixed;
   top: 0;
@@ -679,6 +694,9 @@ h1,
 .menu--opened .menu__wrap {
   display: block;
 }
+.menu--opened .menu__btn {
+  display: none;
+}
 .menu__btn {
   position: relative;
   z-index: 2000;
@@ -689,15 +707,9 @@ h1,
   background-position: center;
   background-size: contain;
 }
-.menu__btn--close {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  background-image: url(../img/icons/cross.svg);
-  background-size: 23px 24px;
-}
 .menu__wrap {
   display: none;
+  position: relative;
   padding-top: 152px;
   height: 100vh;
   color: #fff;
@@ -707,6 +719,19 @@ h1,
   background-position: top right;
   background-size: contain;
   mix-blend-mode: lighten;
+}
+.menu__wrap::after {
+  content: "MENU";
+  position: absolute;
+  top: 300px;
+  right: 100px;
+  font-weight: 800;
+  font-size: 243px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #050505;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
 }
 .menu__block {
   margin-bottom: 55px;
@@ -732,9 +757,17 @@ h1,
   padding-bottom: 10px;
   font-size: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .menu__item:last-child {
   border-bottom: 0;
+}
+.menu__item:hover,
+.menu__item:active {
+  color: #E22D58;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .social {
   font-size: 18px;
@@ -748,6 +781,11 @@ h1,
 .social a:hover,
 .social a:active {
   border-bottom: 1px dashed #fff;
+}
+.social--menu {
+  position: absolute;
+  top: 80vh;
+  left: calc(50% + 400px);
 }
 .promo {
   position: relative;
