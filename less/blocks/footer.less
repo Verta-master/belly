@@ -1,0 +1,149 @@
+.footer {
+  color: #FFFFFF;
+  font-size: 18px;
+  background: #030303;
+}
+.footer__top,
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom {
+  padding-top: 14px;
+  padding-bottom: 20px;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 1.5;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  
+  a {
+    text-decoration: none;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+.footer__license {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.footer__top {
+  padding-bottom: 78px;
+  padding-top: 71px;
+}
+.footer__block {
+  margin-bottom: 22px;
+}
+.footer__subtitle {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 1.2;
+  opacity: 0.5;
+}
+.footer__data .logo {
+  margin-bottom: 45px;
+}
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 350;
+  font-size: 28px;
+  line-height: 1.2;
+  opacity: 0.5;
+}
+.footer__list {
+  .reset();
+  list-style: none;
+  
+  li {
+    margin-bottom: 10px;
+    
+    a {
+      text-decoration: none;
+      .transition();
+      
+      &:hover,
+      &:active {
+        color: #E22D58;
+        .transition();
+      }
+    }
+  }
+}
+.footer__phone {
+  position: relative;
+  padding-left: 48.5px;
+  margin-bottom: 20px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 30px;
+    height: 29px;
+    background-image: url(../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.footer__call {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  .transition();
+
+  &:hover,
+  &:active {
+    color: #E22D58;
+    .transition();
+  }
+}
+.footer__link {
+  text-decoration: none;
+  color: #D9B8C8;
+  font-size: 14px;
+  line-height: 1;
+  border-bottom: 1px dashed #D9B8C8;
+  
+  &:hover,
+  &:active {
+    border-color: rgba(255,255,255,0);
+  }
+}
+.footer__mail {
+  display: block;
+  text-decoration: none;
+  .transition();
+
+  &:hover,
+  &:active {
+    color: #E22D58;
+    .transition();
+  }
+}
+.footer__contacts {
+  height: 100%;
+  
+  .social {
+    margin-top: 98px;
+    
+    a {
+      margin-left: 0;
+      margin-right: 20px;
+      border-bottom: 1px dashed #FFFFFF;
+      
+      &:hover,
+      &:active {
+        border-color: rgba(255,255,255,0);
+      }
+    }
+  }
+}

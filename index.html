@@ -23,13 +23,33 @@
         <a href="#">facebook</a>
       </div>
       <a href="tel:+78001230784" class="header__phone">8 800 123-07-84</a>
-      <a href="#" class="btn btn--white header__btn">заказать звонок</a>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--white header__btn">заказать звонок</a>
     </div>
   </header>
   
   <nav class="menu">
     <button type="button" class="menu__btn" title="Menu"></button>
-    
+    <div class="wrapper menu__wrap">
+      <div class="menu__block">
+        <p class="menu__title">Курсы школы</p>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Курсы наращивания ресниц</a></li>
+          <li class="menu__item"><a href="#">Курсы бровистов</a></li>
+          <li class="menu__item"><a href="#">Перманентный макияж</a></li>
+          <li class="menu__item"><a href="#">Ногтевой сервис</a></li>
+        </ul>
+      </div>
+      <div class="menu__block">
+        <p class="menu__title">Информация</p>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">О нас</a></li>
+          <li class="menu__item"><a href="#">Моделям</a></li>
+          <li class="menu__item menu__item--active"><a href="#">Контакты</a></li>
+          <li class="menu__item"><a href="#">Обратная связь</a></li>
+          <li class="menu__item"><a href="#">Отзывы</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
   
   <main>
@@ -653,19 +673,284 @@
       <div class="wrapper">
         <p class="subtitle">Вас может заинтересовать</p>
         <p class="title">Популярные курсы академии красоты</p>
+        <p class="undertitle">Популярные</p>
         <ul class="tabs__title">
-          <li class="tabs__name"><a href="#tabs-1"></a></li>
-          <li class="tabs__name"><a href="#tabs-2"></a></li>
-          <li class="tabs__name"><a href="#tabs-3"></a></li>
+          <li class="tabs__name"><a href="#tabs-1">Курсы наращивания ресниц</a></li>
+          <li class="tabs__name"><a href="#tabs-2">Курсы бровистов</a></li>
+          <li class="tabs__name"><a href="#tabs-3">Татуаж и перманентный макияж</a></li>
         </ul>
         <div class="tabs__field" id="tabs-1">
-
+          <div class="course__wrap">
+            <div class="swiper-container course__slider course__slider--05">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-10.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">Классическое наращивание ресниц</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-11.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">Классическое + объё-мное наращивание 2D-3D</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-12.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">Объёмное наращивание 2D-3D</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev course__prev course__prev--05"></div>
+            <div class="swiper-button-next course__next course__next--05"></div>
+          </div>
         </div>
         <div class="tabs__field" id="tabs-2">
-
+          <div class="course__wrap">
+            <div class="swiper-container course__slider course__slider--06">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-13.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">VIP Мастер Бровист + VIP Lashmaker</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-14.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">VIP Мастер Бровист + VIP Lashmaker</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-15.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">VIP Мастер Бровист + VIP Lashmaker</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="swiper-button-prev course__prev course__prev--06"></div>
+          <div class="swiper-button-next course__next course__next--06"></div>
+        </div>
         </div>
         <div class="tabs__field" id="tabs-3">
-
+          <div class="course__wrap">
+            <div class="swiper-container course__slider course__slider--07">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-16.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">ТОП мастер перманентного макияжа</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-17.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">Перманентный макияж бровей</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide course__slide">
+                  <a href="#" class="course__link">
+                    <figure class="course__img">
+                      <img src="img/images/img-18.jpg" alt="курсы академии красоты">
+                    </figure>
+                    <p class="course__title">Перманентный макияж губ</p>
+                  </a>
+                  <div class="course__info">
+                    <ul>
+                      <li>1 день 8 ак. часов</li>
+                      <li>Отработка: 1 модель</li>
+                      <li>Каждый доп день (8ак. часов) 4900р</li>
+                      <li>Класическое наращивание</li>
+                      <li>Снятие</li>
+                      <li>Отбор материалов</li>
+                      <li>Индивидуальный курс 8900 руб.</li>
+                      <li>Сертификат Международного образца</li>
+                    </ul>
+                    <div class="course__bottom">
+                      <p class="course__sale">Скидка 39%</p>
+                      <p class="course__oldprice">Было <span>13 800 руб.</span></p>
+                      <p class="course__price"><span>8 800</span> руб.</p>
+                      <a href="#" class="btn btn--white course__more">подробнее</a>
+                      <a href="#" class="btn btn--shadow course__order">записаться на курс</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev course__prev course__prev--07"></div>
+            <div class="swiper-button-next course__next course__next--07"></div>
+          </div>
         </div>
         
       </div>
@@ -675,6 +960,7 @@
       <div class="wrapper">
         <p class="subtitle">слова благодарности</p>
         <p class="title">Последние отзывы учеников</p>
+        <p class="undertitle">отзывы</p>
         <ul class="review__list">
           <li class="review__item">
             <div class="review__top">
@@ -724,6 +1010,7 @@
         <p class="insta__hash">#belly school</p>
         <p class="title">Мы в instagram</p>
         <p class="subtitle-2">Подписывайтесь на наш Instagram, следите за полезным контентом и жизнью студии</p>
+        <p class="undertitle">Instagram</p>
         <ul class="insta__list">
           <li class="insta__item">
             <a href="#" class="insta__link">
@@ -790,7 +1077,7 @@
       <div class="footer__contacts">
         <div class="footer__phone">
           <a href="tel:+78001230784" class="footer__call">8 800 123-07-84</a>
-          <a href="#" class="footer__link">Заказать звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="footer__link">Заказать звонок</a>
         </div>
         <div class="footer__block">
           <p class="footer__subtitle">e-mail</p>
@@ -811,10 +1098,32 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <figure class="modal__ava">
+      <img src="img/images/ava-3.jpg" alt="Оставьте заявку">
+    </figure>
+    <p class="modal__title">Оставьте заявку</p>
+    <p class="modal__subtitle">И наш менеджер свяжется с Вами в течении 15 минут</p>
+    <form action="#" class="form">
+      <div class="form__field form__field--name">
+        <label for="" class="form__label">Ваше имя</label>
+        <input type="text" class="form__input" placeholder="Валерия">
+      </div>
+      <div class="form__field form__field--phone">
+        <label for="" class="form__label">ВАШ ТЕЛЕФОН</label>
+        <input type="tel" class="form__input" placeholder="+7 (___) __ - __ - ___">
+      </div>
+      <button type="submit" class="btn btn--shadow form__btn">заказать звонок</button>
+      <p class="form__comment">Отправляя форму вы соглашаетесь с условиями обработки <a href="#">персональных данных</a></p>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -861,6 +1170,45 @@
       navigation: {
         nextEl: '.course__next--04',
         prevEl: '.course__prev--04',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 60,
+      loop: true,
+    });
+    
+    var mySwiper4 = new Swiper ('.course__slider--05', {
+      navigation: {
+        nextEl: '.course__next--05',
+        prevEl: '.course__prev--05',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 60,
+      loop: true,
+    });
+    
+    var mySwiper4 = new Swiper ('.course__slider--06', {
+      navigation: {
+        nextEl: '.course__next--06',
+        prevEl: '.course__prev--06',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 60,
+      loop: true,
+    });
+    
+    var mySwiper4 = new Swiper ('.course__slider--07', {
+      navigation: {
+        nextEl: '.course__next--07',
+        prevEl: '.course__prev--07',
       },
       simulateTouch: false,
       preventClicks: false,
