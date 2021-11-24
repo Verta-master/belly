@@ -1,7 +1,14 @@
 //Mobile menu
 $('.menu__btn').click(function() {
-  $(this).toggleClass('menu__btn--close');
-  $('.menu').toggleClass('menu--opened');
+  $('.menu').addClass('menu--opened');
+  $('.header__menu').addClass('header__menu--show');
+  $('.header .social').addClass('social--menu');
+});
+
+$('.header__menu').click(function() {
+  $(this).removeClass('header__menu--show');
+  $('.menu').removeClass('menu--opened');
+  $('.header .social').removeClass('social--menu');
 })
 
 //if (window.innerWidth < 766) {

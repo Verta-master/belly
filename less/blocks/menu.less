@@ -16,6 +16,9 @@
     .menu__wrap {
       display: block;
     }
+    .menu__btn {
+      display: none;
+    }
   }
 }
 .menu__btn {
@@ -27,17 +30,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  
-  &--close {
-    position: absolute;
-    top: 18px;
-    left: 18px;
-    background-image: url(../img/icons/cross.svg);
-    background-size: 23px 24px;
-  }
 }
 .menu__wrap {
   display: none;
+  position: relative;
   padding-top: 152px;
   height: 100vh;
   color: #fff;
@@ -47,6 +43,20 @@
   background-position: top right;
   background-size: contain;
   mix-blend-mode: lighten;
+  
+  &::after {
+    content: "MENU";
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    font-weight: 800;
+    font-size: 243px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #050505;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+  }
 }
 .menu__block {
   margin-bottom: 55px;
@@ -71,8 +81,14 @@
   padding-bottom: 10px;
   font-size: 15px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  .transition();
   
   &:last-child {
     border-bottom: 0;
+  }
+  &:hover,
+  &:active {
+    color: #E22D58;
+    .transition();
   }
 }
