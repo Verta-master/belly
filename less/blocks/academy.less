@@ -9,11 +9,12 @@
     font-size: 70px;
     line-height: 1;
     letter-spacing: 0.2em;
+    margin-top: 20px;
     
     &::after {
       content: "";
       position: absolute;
-      bottom: -90px;
+      bottom: -84px;
       left: 50%;
       transform: translateX(-50%);
       width: 120px;
@@ -34,8 +35,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 63px;
-  margin-top: 126px;
+  margin-top: 120px;
   border-radius: 45px;
+  
   
   img {
     display: block;
@@ -43,6 +45,7 @@
     width: 100%;
     height: auto;
     border-radius: 45px;
+    border: 2px solid #241828;
   }
   &::before {
     content: "";
@@ -55,6 +58,7 @@
     background: linear-gradient(180deg, #241828 0%, #13131F 100%);
     opacity: 0.7;
     border-radius: 45px;
+    .transition();
   }
   &::after {
     content: "";
@@ -68,6 +72,13 @@
     background-image: url(../img/icons/play.svg);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  &:hover,
+  &:active {
+    &::before {
+      opacity: 0.5;
+      .transition();
+    }
   }
 }
 .academy__text {
