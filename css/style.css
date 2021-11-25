@@ -620,13 +620,16 @@ h1,
   padding-top: 18px;
   padding-bottom: 18px;
   color: #FFFFFF;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .header--internal {
   background: #030303;
 }
 .header--scroll {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 16, 16, 0)), to(#101010));
-  background: linear-gradient(0deg, rgba(16, 16, 16, 0) 0%, #101010 100%);
+  background: #030303;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .header__wrap {
   display: -webkit-box;
@@ -1927,4 +1930,148 @@ h1,
 .form__comment a:hover,
 .form__comment a:active {
   text-decoration: underline;
+}
+.breadcrumbs {
+  margin-top: 100px;
+  padding-top: 28px;
+  padding-bottom: 24px;
+  background: #FCF8FB;
+}
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #E22D58;
+  font-weight: 300;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+a.breadcrumbs__link {
+  color: #030303;
+  margin-right: 5px;
+  text-decoration: none;
+}
+a.breadcrumbs__link::after {
+  content: "/";
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+a.breadcrumbs__link:hover,
+a.breadcrumbs__link:active {
+  text-decoration: underline;
+}
+.profession {
+  position: relative;
+  padding-top: 107px;
+  padding-bottom: 52px;
+}
+.profession .title {
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+.profession .undertitle {
+  opacity: 0.05;
+  width: 100%;
+  top: 200px;
+}
+.profession__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 72px;
+}
+.profession__item {
+  position: relative;
+  z-index: 2;
+  width: 48%;
+  margin-bottom: 48px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#241828), to(#13131F));
+  background: linear-gradient(180deg, #241828 0%, #13131F 100%);
+  -webkit-box-shadow: 0px 4px 32px rgba(64, 6, 57, 0.1);
+          box-shadow: 0px 4px 32px rgba(64, 6, 57, 0.1);
+  border-radius: 45px;
+}
+.profession__item::before,
+.profession__item::after {
+  content: "";
+  position: absolute;
+  bottom: 28px;
+  right: 41px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  pointer-events: none;
+}
+.profession__item::before {
+  z-index: -1;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(226, 45, 88, 0.99)), to(rgba(151, 11, 134, 0.24)));
+  background: linear-gradient(-90deg, rgba(226, 45, 88, 0.99) 0%, rgba(151, 11, 134, 0.24) 100%);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+.profession__item::after {
+  z-index: 2;
+  background: url(../img/icons/next.svg), -webkit-gradient(linear, right top, left top, from(rgba(226, 45, 88, 0.99)), to(rgba(151, 11, 134, 0.24)));
+  background: url(../img/icons/next.svg), linear-gradient(-90deg, rgba(226, 45, 88, 0.99) 0%, rgba(151, 11, 134, 0.24) 100%);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.profession__item:hover .profession__img,
+.profession__item:active .profession__img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.profession__link {
+  display: block;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+}
+.profession__img {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 42px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 32px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 0px 32px rgba(255, 255, 255, 0.3);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.profession__img img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+}
+.profession__info {
+  padding: 22px 34px;
+  padding-right: 144px;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 1.1;
+  color: #FFFFFF;
 }
