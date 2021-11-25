@@ -50,3 +50,32 @@
     margin-top: 62px;
   }
 }
+.tabs__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 69px;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  ul {
+    .reset();
+    list-style: none;
+    max-width: 393px;
+    
+    li {
+      padding: 13px 19px;
+      border-radius: 10px;
+      
+      &:nth-child(2n + 1) {
+        background-color: rgba(77, 87, 106, 0.05);
+      }
+    }
+  }
+}
+.tabs__left {
+  width: 50%;
+}
+.tabs__right {
+  width: 40%;
+}

@@ -1,0 +1,134 @@
+.card {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  
+  h1 {
+    margin-bottom: 32px;
+    text-align: left;
+    font-size: 46px;
+    line-height: 1.2;
+  }
+}
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+.card__slider {
+  width: 48%;
+  
+  .gallery-top,
+  .gallery-thumbs {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .gallery-thumbs {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .swiper-slide-thumb-active {
+    border: 1px solid #E22D58;
+  }
+}
+.card__info {
+  width: 48%;
+  
+  table {
+    width: 241px;
+    border-collapse: collapse;
+    font-size: 16px;
+    margin-bottom: 61px;
+    
+    td {
+      height: 46px;
+      vertical-align: middle;
+      border-bottom: 1px solid rgba(3, 3, 3, 0.1);
+      border-top: 1px solid rgba(3, 3, 3, 0.1);
+      
+      &:last-child {
+        opacity: 0.7;
+        text-align: right
+      }
+    }
+  }
+  .card__price {
+    margin-bottom: 43px;
+  }
+}
+.card__thumb,
+.card__slide {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+.card__thumb {
+  height: 97px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 32px rgba(64, 6, 57, 0.07);
+  overflow: hidden;
+  
+  img {
+    height: 100%;
+    max-width: none;
+  }
+}
+.card__slide {
+  height: 400px;
+  border-radius: 45px;
+  
+  img {
+    border-radius: 45px;
+  }
+}
+.card__sale {
+  margin-bottom: 5px;
+  color: #E22D58;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.card__oldprice {
+  margin-bottom: 5px;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.5;
+  
+  span {
+    text-decoration: line-through;
+  }
+}
+.card__newprice {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  line-height: 1.1;
+  font-size: 26px;
+  
+  span {
+    font-size: 60px;
+  }
+}
+.card__block {
+  padding: 30px 20px;
+  padding-bottom: 46px;
+  margin-bottom: 44px;
+  background-color: #fff;
+  box-shadow: 0px 4px 32px rgba(64, 6, 57, 0.1);
+  border: 1px solid rgba(134, 149, 173, 0.1);
+  border-radius: 30px;
+}
+.card__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card__btn {
+  width: 400px;
+  height: 70px;
+  font-size: 15px;
+}
