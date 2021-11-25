@@ -11,10 +11,11 @@ $('.header__menu').click(function() {
   $('.header .social').removeClass('social--menu');
 })
 
-//if (window.innerWidth < 766) {
-//  $('.menu__link').click(function() {
-//    $('.menu__list').slideToggle();
-//    $('.menu').removeClass('menu--opened');
-//  })
-//}
-
+//Header scroll
+$(window).scroll(function(){
+  if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
+    $('.header').addClass('header--scroll');
+  } else {
+    $('.header').removeClass('header--scroll');
+  };
+});
