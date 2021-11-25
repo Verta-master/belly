@@ -1474,6 +1474,9 @@ h1,
 .review .undertitle {
   opacity: 0.05;
 }
+.review--internal {
+  padding-bottom: 30px;
+}
 .review__list {
   margin: 0;
   padding: 0;
