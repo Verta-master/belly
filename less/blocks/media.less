@@ -1,3 +1,24 @@
+.course__list,
+.photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.course__list {
+  margin-right: -60px;
+  
+  .course__slide {
+    width: 350px;
+    max-width: 100%;
+    margin-right: 60px;
+    margin-bottom: 60px;
+  }
+}
+.element-d_photo_item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
 @media (max-width: 1800px) {
   .undertitle {
     font-size: 160px;
@@ -27,6 +48,7 @@
     margin-right: 30px;
   }
 }
+//-----------------------------------------
 @media (max-width: 1200px) {
   .header .social {
     display: none;
@@ -44,8 +66,237 @@
     margin-right: 0;
     justify-content: space-around;
   }
+  .result__item {
+    margin-right: 0;
+  }
   .course__img img {
     width: 100%;
     height: auto;
+  }
+}
+//-------------------------------------------
+@media (max-width: 1022px) {
+  .course__list,
+  .photo__list {
+    justify-content: space-around;
+    margin-right: 0;
+  }
+  .course__list .course__slide,
+  .element-d_photo_item {
+    margin-right: 0;
+  }
+  .footer__bottom {
+    display: block;
+    text-align: center;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__data {
+    order: 1;
+    width: 50%;
+  }
+  .footer__contacts {
+    order: 2;
+    width: 50%;
+  }
+  .footer__links--info {
+    order: 3;
+    width: 50%;
+    margin-top: 30px;
+  }
+  .footer__links--school {
+    order: 4;
+    width: 50%;
+    margin-top: 30px;
+  }
+  .undertitle {
+    font-size: 80px;
+    left: ~"calc(50% + 33px)";
+  }
+  .insta__text {
+    left: 10px;
+    right: 10px;
+  }
+  .review__top {
+    display: block;
+  }
+  .review__person {
+    width: 100%;
+  }
+  .title, h1 {
+    font-size: 48px;
+  }
+  .license .title {
+    font-size: 36px;
+  }
+  .tabs .undertitle {
+    top: 150px;
+  }
+  .tabs__title {
+    flex-direction: column;
+  }
+  .tabs__name {
+    margin-bottom: 10px;
+  }
+  .header__phone {
+    display: none;
+  }
+}
+//-------------------------------------------
+@media (max-width: 766px) {
+  .title, h1,
+  .promo h1 {
+    font-size: 36px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .promo__subtitle {
+    font-size: 16px;
+  }
+  .undertitle {
+    font-size: 50px;
+  }
+  .faq__title {
+    font-size: 20px;
+    padding-right: 100px;
+  }
+  .faq__item {
+    padding: 20px;
+  }
+  .academy .title {
+    font-size: 48px;
+  }
+  .academy__video::after {
+    width: 60px;
+    height: 60px;
+  }
+  .review__list {
+    display: block;
+  }
+  .review__item {
+    width: 100%;
+  }
+  .insta__list {
+    flex-wrap: wrap;
+  }
+  .insta__item {
+    width: 50%;
+  }
+}
+//-------------------------------------------
+@media (max-width: 480px) {
+  .menu__title {
+    font-size: 20px;
+  }
+  .header__btn {
+    width: 46px;
+    font-size: 0;
+    background-image: url(../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 29px;
+    background-position: center;
+    border: 0;
+    
+    &:hover,
+    &:active {
+      background-image: url(../img/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-size: 30px 29px;
+      background-position: center;
+    }
+  }
+  .header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menu {
+    padding-top: 8px;
+    padding-bottom: 0;
+    bottom: auto;
+    height: 56px;
+  }
+  .header__menu {
+    top: 8px;
+    left: 20px;
+  }
+  .wrapper {
+    padding-left: 15px;
+  }
+  .promo {
+    padding-top: 100px;
+  }
+  .promo__wrap {
+    position: relative;
+    z-index: 10;
+  }
+  .benefits__item {
+    padding-left: 90px;
+    padding-top: 17px;
+  }
+  .undertitle {
+    font-size: 36px;
+    left: 50%;
+  }
+  .faq__title {
+    padding-right: 50px;
+  }
+  .title, h1 {
+    font-size: 28px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-next {
+    right: -10px;
+  }
+  .swiper-button-prev {
+    left: -10px;
+  }
+  .course__img {
+    height: 250px;
+  }
+  .license .title {
+    font-size: 30px;
+  }
+  .tabs__name {
+    width: 100%;
+    text-align: center;
+  }
+  .insta__text {
+    font-size: 12px;
+    
+    &::before {
+      top: -2px;
+    }
+  }
+  .footer__data,
+  .footer__contacts,
+  .footer__links--info,
+  .footer__links--school {
+    width: 100%;
+  }
+  .footer__data .logo {
+    width: auto;
+  }
+  .footer__contacts .social {
+    margin-top: 20px;
+  }
+  .faq__drop {
+    padding-right: 50px;
+  }
+  .header__wrap {
+    padding-left: 66px;
+  }
+  .menu__wrap {
+    background-size: cover;
+    background-position: center;
+    
+    &::after {
+      display: none;
+    }
   }
 }
