@@ -182,6 +182,38 @@
   .profession__item::before {
     right: 22px;
   }
+  .review__ava {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .review__text,
+  .review__person {
+    text-align: center;
+  }
+  .footer__list {
+    display: none;
+  }
+  .footer__title {
+    position: relative;
+    margin-bottom: 10px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      width: 18px;
+      height: 12px;
+      background-image: url(../img/icons/down.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &--top {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 //-------------------------------------------
 @media (max-width: 766px) {
