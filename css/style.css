@@ -1500,6 +1500,7 @@ h1,
   text-decoration: none;
   letter-spacing: 0.1em;
   text-align: center;
+  outline: none;
 }
 .tabs__field .course__wrap {
   margin-top: 62px;
@@ -2600,6 +2601,36 @@ a.breadcrumbs__link:active {
   .profession__item::after,
   .profession__item::before {
     right: 22px;
+  }
+  .review__ava {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .review__text,
+  .review__person {
+    text-align: center;
+  }
+  .footer__list {
+    display: none;
+  }
+  .footer__title {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .footer__title::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    width: 18px;
+    height: 12px;
+    background-image: url(../img/icons/down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .footer__title--top::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 @media (max-width: 766px) {
