@@ -1499,6 +1499,7 @@ h1,
   line-height: 1;
   text-decoration: none;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 .tabs__field .course__wrap {
   margin-top: 62px;
@@ -2439,7 +2440,7 @@ a.breadcrumbs__link:active {
     right: 0;
   }
   .wrapper {
-    padding-left: 66px;
+    padding-left: 80px;
   }
   .promo {
     background-size: cover;
@@ -2450,6 +2451,9 @@ a.breadcrumbs__link:active {
   }
   .result__item {
     margin-right: 30px;
+  }
+  .profession__img {
+    height: 284px;
   }
 }
 @media (max-width: 1200px) {
@@ -2478,6 +2482,12 @@ a.breadcrumbs__link:active {
   .course__img img {
     width: 100%;
     height: auto;
+  }
+  .profession__img {
+    height: 238px;
+  }
+  .profession__info {
+    font-size: 22px;
   }
 }
 @media (max-width: 1022px) {
@@ -2527,15 +2537,23 @@ a.breadcrumbs__link:active {
   }
   .undertitle {
     font-size: 80px;
-    left: calc(50% + 33px);
+    left: calc(50% + 40px);
   }
   .insta__text {
     left: 10px;
     right: 10px;
   }
+  .contacts__wrap,
+  .card__wrap,
   .review__top {
     display: block;
   }
+  .contacts__block,
+  .contacts__form,
+  .card__info,
+  .card__slider,
+  .tabs__left,
+  .tabs__right,
   .review__person {
     width: 100%;
   }
@@ -2560,6 +2578,28 @@ a.breadcrumbs__link:active {
   }
   .header__phone {
     display: none;
+  }
+  .tabs__wrap {
+    display: block;
+    padding-top: 40px;
+  }
+  .tabs__wrap ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts__block {
+    margin-bottom: 20px;
+  }
+  .profession__img {
+    height: 170px;
+  }
+  .profession__info {
+    padding-left: 22px;
+    padding-right: 100px;
+  }
+  .profession__item::after,
+  .profession__item::before {
+    right: 22px;
   }
 }
 @media (max-width: 766px) {
@@ -2591,6 +2631,7 @@ a.breadcrumbs__link:active {
     width: 60px;
     height: 60px;
   }
+  .card__line,
   .review__list {
     display: block;
   }
@@ -2603,6 +2644,39 @@ a.breadcrumbs__link:active {
   }
   .insta__item {
     width: 50%;
+  }
+  .breadcrumbs {
+    margin-top: 82px;
+  }
+  .card {
+    padding-top: 40px;
+  }
+  .card__slide {
+    height: 295px;
+  }
+  .card__thumb {
+    height: 70px;
+  }
+  .card__line .card__price {
+    margin-bottom: 20px;
+  }
+  .contacts__block {
+    padding: 30px;
+  }
+  .profession,
+  .contacts {
+    padding-top: 50px;
+  }
+  .profession .undertitle {
+    top: 100px;
+  }
+  .profession__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .profession__item {
+    width: 320px;
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -2710,10 +2784,33 @@ a.breadcrumbs__link:active {
     padding-left: 66px;
   }
   .menu__wrap {
+    padding-top: 100px;
     background-size: cover;
     background-position: center;
   }
   .menu__wrap::after {
     display: none;
+  }
+  .breadcrumbs {
+    margin-top: 56px;
+  }
+  .card__slide {
+    height: 210px;
+  }
+  .card__thumb {
+    height: 50px;
+  }
+  .card h1 {
+    font-size: 36px;
+  }
+  .contacts__form,
+  .contacts__block {
+    padding: 20px;
+  }
+  .profession__img {
+    height: 150px;
+  }
+  .review--internal {
+    padding-top: 50px;
   }
 }

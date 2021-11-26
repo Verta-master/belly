@@ -9,7 +9,11 @@ $('.header__menu').click(function() {
   $(this).removeClass('header__menu--show');
   $('.menu').removeClass('menu--opened');
   $('.header .social').removeClass('social--menu');
-})
+});
+
+if (window.innerWidth < 1400) {
+  $('.menu__wrap').niceScroll();
+}
 
 //Header scroll
 $(window).scroll(function(){
