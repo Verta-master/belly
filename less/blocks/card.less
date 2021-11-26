@@ -128,7 +128,34 @@
   align-items: flex-end;
 }
 .card__btn {
+  position: relative;
+  z-index: 5;
   width: 400px;
   height: 70px;
   font-size: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    bottom: -4px;
+    background: #000000;
+    opacity: 0.1;
+    border-radius: 30px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    bottom: -4px;
+    background: linear-gradient(92.52deg, #E22D58 0%, #970B86 100%);
+    border-radius: 30px;
+  }
 }
